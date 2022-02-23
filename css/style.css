@@ -857,6 +857,12 @@ body {
 .footer_menu-copyright {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.footer_menu-reference {
+    width: 170px;
 }
 
 .footer_menu-reference p {
@@ -869,9 +875,27 @@ body {
 
 .footer_menu-reference li {
     list-style-type: none;
+    margin-top: 24px;
 }
 
 .footer_menu-reference li a {
     text-decoration: none;
+    color: #8393AF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.footer_menu-reference li a:hover {
     color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.footer_menu-copyright p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8393AF;
 }
