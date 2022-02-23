@@ -11,10 +11,14 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
+    background-image: url("/img/bgbody.png");
     background-color: #030812;
+    background-repeat: no-repeat;
+    background-position: -400px -260px;
     color: #FFFFFF;
     font-family: 'Urbanist', sans-serif;
     padding: 0 10px 56px;
+
 }
 
 /*HEADER*/
@@ -74,7 +78,7 @@ body {
     right: 0;
     left: 48px;
     bottom: 0;
-    background: url("/img/search.svg") center center no-repeat;
+    background: url("/img/search.png") center center no-repeat;
     width: 20px;
     height: 20px;
 }
@@ -110,19 +114,21 @@ body {
     margin-right: 8px;
 }
 
+.header_right a:not(:last-child):hover {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
 .header_right a:last-child:hover {
     outline: 1px solid #FFFFFF;
     background: linear-gradient(207.67deg, #FD1C68 3.43%, #FDAE8F 104.7%);
 }
 
-.header_right a:not(:last-child):hover {
-    color: red;
-}
 
 /*HERO*/
 
 .hero {
-    background: url("/img/bgrocet.svg") right center no-repeat;
+    background: url("/img/bgrocket.png") right center no-repeat;
     height: 600px;
 }
 
@@ -259,15 +265,12 @@ body {
 
 /*AUCTION*/
 
-.auction {
-    margin-top: 160px;
-}
-
 .auction_explore {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 160px;
 }
 
 .auction_explore h2 {
@@ -442,14 +445,11 @@ body {
 
 /*COLLECTION*/
 
-.collection {
-    margin-top: 160px;
-}
-
 .collection_explore {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 160px;
 }
 
 .collection_explore h2 {
@@ -479,6 +479,7 @@ body {
 
 .collection_explore a:hover {
     outline: 1px solid #FFFFFF;
+    background: linear-gradient(207.67deg, #FD1C68 3.43%, #FDAE8F 104.7%);
 }
 
 .collection_wrapper {
@@ -547,11 +548,8 @@ body {
 /*SELLERS*/
 
 
-.sellers {
-    margin-top: 160px;
-}
-
 .sellers h2 {
+    margin-top: 160px;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -601,16 +599,13 @@ body {
 
 /*TODAY*/
 
-.today {
-    margin-top: 160px;
-}
-
-.today h2 {
+.today > h2 {
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 88px;
     text-align: center;
+    margin-top: 160px;
 }
 
 .today_slider {
