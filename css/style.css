@@ -782,6 +782,7 @@ body {
 }
 
 .today_btn-loading:hover {
+    cursor: pointer;
     outline: 1px solid #FFFFFF;
     background: linear-gradient(207.67deg, #FD1C68 3.43%, #FDAE8F 104.7%);
 }
