@@ -4,395 +4,559 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/slick.css">
     <title>HomePage</title>
 </head>
 <body>
-<header class="header">
-    <div class="header_left">
-        <a href="#">
-            <img src="./img/logo.svg" alt="logo">
-            <span class="header_title">Ultra NFT</span>
-        </a>
-        <div class="header_left-search">
-            <input type="search" placeholder="Search">
-        </div>
-    </div>
-    <div class="header_right">
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Explore</a>
-            <a href="#">Pages</a>
-            <a href="#">Contact us</a>
+<header>
+    <div class="container header">
+        <div class="header_left">
             <a href="#">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.125 5V15C3.125 15.3315 3.2567 15.6495 3.49112 15.8839C3.72554 16.1183 4.04348 16.25 4.375 16.25H16.875C17.0408 16.25 17.1997 16.1842 17.3169 16.0669C17.4342 15.9497 17.5 15.7908 17.5 15.625V6.875C17.5 6.70924 17.4342 6.55027 17.3169 6.43306C17.1997 6.31585 17.0408 6.25 16.875 6.25H4.375C4.04348 6.25 3.72554 6.1183 3.49112 5.88388C3.2567 5.64946 3.125 5.33152 3.125 5ZM3.125 5C3.125 4.66848 3.2567 4.35054 3.49112 4.11612C3.72554 3.8817 4.04348 3.75 4.375 3.75H14.375"
-                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M14 11.25C14 11.2155 14.028 11.1875 14.0625 11.1875C14.097 11.1875 14.125 11.2155 14.125 11.25C14.125 11.2845 14.097 11.3125 14.0625 11.3125C14.028 11.3125 14 11.2845 14 11.25Z"
-                          fill="white" stroke="white" stroke-width="2"/>
-                </svg>
-                Connect Wallet
+                <img src="./img/logo.svg" alt="logo">
+                <span class="header_title">Ultra NFT</span>
             </a>
-        </nav>
+            <div class="header_left-search">
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+        <div class="header_right">
+            <nav class="header_right-nav">
+                <a href="#">Home</a>
+                <a href="#">Explore</a>
+                <a href="#">Pages</a>
+                <a href="#">Contact us</a>
+                <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.125 5V15C3.125 15.3315 3.2567 15.6495 3.49112 15.8839C3.72554 16.1183 4.04348 16.25 4.375 16.25H16.875C17.0408 16.25 17.1997 16.1842 17.3169 16.0669C17.4342 15.9497 17.5 15.7908 17.5 15.625V6.875C17.5 6.70924 17.4342 6.55027 17.3169 6.43306C17.1997 6.31585 17.0408 6.25 16.875 6.25H4.375C4.04348 6.25 3.72554 6.1183 3.49112 5.88388C3.2567 5.64946 3.125 5.33152 3.125 5ZM3.125 5C3.125 4.66848 3.2567 4.35054 3.49112 4.11612C3.72554 3.8817 4.04348 3.75 4.375 3.75H14.375"
+                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 11.25C14 11.2155 14.028 11.1875 14.0625 11.1875C14.097 11.1875 14.125 11.2155 14.125 11.25C14.125 11.2845 14.097 11.3125 14.0625 11.3125C14.028 11.3125 14 11.2845 14 11.25Z"
+                              fill="white" stroke="white" stroke-width="2"/>
+                    </svg>
+                    Connect Wallet
+                </a>
+            </nav>
+        </div>
     </div>
 </header>
 <section class="hero">
-    <div class="hero_content">
-        <h1 class="hero_content-title">
-            Discover, collect, and sell extraordinary <span>NFTs</span>
-        </h1>
-        <p class="hero_content-description">
-            NFT is the world's first and largest NFT marketplace
-        </p>
-        <div class="hero_content-btn">
-            <a href="#" class="hero_content-explore">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.81807 17.3034C7.75741 20.4854 3.51477 20.4854 3.51477 20.4854C3.51477 20.4854 3.51477 16.2428 6.69675 15.1821"
-                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M18.3639 9.87888L12 16.2428L7.75732 12.0002L14.1213 5.63624C16.531 3.22648 18.9408 3.24998 19.9685 3.40332C20.1267 3.4269 20.2732 3.5007 20.3863 3.61382C20.4995 3.72695 20.5733 3.87342 20.5969 4.03165C20.7502 5.05935 20.7737 7.46912 18.3639 9.87888Z"
-                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M17.3033 10.9395V16.9928C17.3033 17.0912 17.2839 17.1888 17.2462 17.2798C17.2085 17.3708 17.1533 17.4534 17.0836 17.5231L14.0516 20.5551C13.9556 20.6511 13.8354 20.7193 13.7037 20.7523C13.572 20.7853 13.4338 20.782 13.3039 20.7426C13.174 20.7033 13.0572 20.6294 12.9659 20.5289C12.8747 20.4284 12.8124 20.305 12.7858 20.1719L12 16.2428"
-                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.0607 6.69678H7.00738C6.90889 6.69678 6.81136 6.71618 6.72037 6.75387C6.62938 6.79156 6.5467 6.8468 6.47705 6.91645L3.44501 9.94849C3.34902 10.0445 3.28088 10.1647 3.24787 10.2964C3.21485 10.4281 3.21818 10.5662 3.25752 10.6962C3.29686 10.8261 3.37072 10.9429 3.47124 11.0341C3.57175 11.1254 3.69514 11.1876 3.82826 11.2143L7.75738 12.0001"
-                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Explore
-            </a>
-            <a href="#" class="hero_content-create">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.75 12H20.25" stroke="white" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                    <path d="M12 3.75V20.25" stroke="white" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                </svg>
-                Create
-            </a>
+    <div class="container hero_wrapper">
+        <div class="hero_content">
+            <h1 class="hero_content-title">
+                Discover, collect, and sell extraordinary <span>NFTs</span>
+            </h1>
+            <p class="hero_content-description">
+                NFT is the world's first and largest NFT marketplace
+            </p>
+            <div class="hero_content-btn">
+                <a href="#" class="hero_content-explore">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.81807 17.3034C7.75741 20.4854 3.51477 20.4854 3.51477 20.4854C3.51477 20.4854 3.51477 16.2428 6.69675 15.1821"
+                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.3639 9.87888L12 16.2428L7.75732 12.0002L14.1213 5.63624C16.531 3.22648 18.9408 3.24998 19.9685 3.40332C20.1267 3.4269 20.2732 3.5007 20.3863 3.61382C20.4995 3.72695 20.5733 3.87342 20.5969 4.03165C20.7502 5.05935 20.7737 7.46912 18.3639 9.87888Z"
+                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.3033 10.9395V16.9928C17.3033 17.0912 17.2839 17.1888 17.2462 17.2798C17.2085 17.3708 17.1533 17.4534 17.0836 17.5231L14.0516 20.5551C13.9556 20.6511 13.8354 20.7193 13.7037 20.7523C13.572 20.7853 13.4338 20.782 13.3039 20.7426C13.174 20.7033 13.0572 20.6294 12.9659 20.5289C12.8747 20.4284 12.8124 20.305 12.7858 20.1719L12 16.2428"
+                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.0607 6.69678H7.00738C6.90889 6.69678 6.81136 6.71618 6.72037 6.75387C6.62938 6.79156 6.5467 6.8468 6.47705 6.91645L3.44501 9.94849C3.34902 10.0445 3.28088 10.1647 3.24787 10.2964C3.21485 10.4281 3.21818 10.5662 3.25752 10.6962C3.29686 10.8261 3.37072 10.9429 3.47124 11.0341C3.57175 11.1254 3.69514 11.1876 3.82826 11.2143L7.75738 12.0001"
+                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Explore
+                </a>
+                <a href="#" class="hero_content-create">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 12H20.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M12 3.75V20.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                    Create
+                </a>
+            </div>
+        </div>
+        <div class="hero_rocket">
+            <img src="img/bgrocket.png" alt="rocket">
         </div>
     </div>
 </section>
 <section class="works">
-    <h2 class="works_title">
-        How it Works
-    </h2>
-    <div class="works_wrapper">
-        <div class="works_info">
-            <div class="works_info-subinfo">
-                <img src="img/wallet.svg" alt="wallet">
-                <h3>Set up your Wallet</h3>
-                <p>Once you’ve set up your wallet of choice, connect it to OpenSeaby clicking the NFT Marketplacein the
-                    top right corner.</p>
+    <div class="container">
+        <h2 class="works_title">
+            How it Works
+        </h2>
+        <div class="works_wrapper">
+            <div class="works_info">
+                <div class="works_info-subinfo">
+                    <img src="img/wallet.svg" alt="wallet">
+                    <h3>Set up your Wallet</h3>
+                    <p>Once you’ve set up your wallet of choice, connect it to OpenSeaby clicking the NFT Marketplacein
+                        the
+                        top right corner.</p>
+                </div>
             </div>
-        </div>
-        <div class="works_info">
-            <div class="works_info-subinfo">
-                <img src="img/collection.svg" alt="wallet">
-                <h3>Create your Collection</h3>
-                <p>Click Create and set up your collection. Add social links, a description, profile & banner images,
-                    and set a secondary sales fee.</p>
+            <div class="works_info">
+                <div class="works_info-subinfo">
+                    <img src="img/collection.svg" alt="wallet">
+                    <h3>Create your Collection</h3>
+                    <p>Click Create and set up your collection. Add social links, a description, profile & banner
+                        images,
+                        and set a secondary sales fee.</p>
+                </div>
             </div>
-        </div>
-        <div class="works_info">
-            <div class="works_info-subinfo">
-                <img src="img/upload.svg" alt="wallet">
-                <h3>Add your NFTs</h3>
-                <p>Upload your work (image, video, audio, or 3D art), add a title and description, and customize your
-                    NFTs with properties, stats</p>
+            <div class="works_info">
+                <div class="works_info-subinfo">
+                    <img src="img/upload.svg" alt="wallet">
+                    <h3>Add your NFTs</h3>
+                    <p>Upload your work (image, video, audio, or 3D art), add a title and description, and customize
+                        your
+                        NFTs with properties, stats</p>
+                </div>
             </div>
-        </div>
-        <div class="works_info">
-            <div class="works_info-subinfo">
-                <img src="img/sale.svg" alt="wallet">
-                <h3>List them for Sale</h3>
-                <p>Choose between auctions, fixed-price listings, and declining-price listings. You choose how you want
-                    to sell your NFTs!</p>
+            <div class="works_info">
+                <div class="works_info-subinfo">
+                    <img src="img/sale.svg" alt="wallet">
+                    <h3>List them for Sale</h3>
+                    <p>Choose between auctions, fixed-price listings, and declining-price listings. You choose how you
+                        want
+                        to sell your NFTs!</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section class="auction">
-    <div class="auction_explore">
-        <h2>Live auction</h2>
-        <a href="#">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.81807 17.3034C7.75741 20.4854 3.51477 20.4854 3.51477 20.4854C3.51477 20.4854 3.51477 16.2428 6.69675 15.1821"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18.3639 9.87888L12 16.2428L7.75732 12.0002L14.1213 5.63624C16.531 3.22648 18.9408 3.24998 19.9685 3.40332C20.1267 3.4269 20.2732 3.5007 20.3863 3.61382C20.4995 3.72695 20.5733 3.87342 20.5969 4.03165C20.7502 5.05935 20.7737 7.46912 18.3639 9.87888Z"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M17.3033 10.9395V16.9928C17.3033 17.0912 17.2839 17.1888 17.2462 17.2798C17.2085 17.3708 17.1533 17.4534 17.0836 17.5231L14.0516 20.5551C13.9556 20.6511 13.8354 20.7193 13.7037 20.7523C13.572 20.7853 13.4338 20.782 13.3039 20.7426C13.174 20.7033 13.0572 20.6294 12.9659 20.5289C12.8747 20.4284 12.8124 20.305 12.7858 20.1719L12 16.2428"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M13.0607 6.69678H7.00738C6.90889 6.69678 6.81136 6.71618 6.72037 6.75387C6.62938 6.79156 6.5467 6.8468 6.47705 6.91645L3.44501 9.94849C3.34902 10.0445 3.28088 10.1647 3.24787 10.2964C3.21485 10.4281 3.21818 10.5662 3.25752 10.6962C3.29686 10.8261 3.37072 10.9429 3.47124 11.0341C3.57175 11.1254 3.69514 11.1876 3.82826 11.2143L7.75738 12.0001"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Explore All
-        </a>
-    </div>
-    <div class="auction_slick">
-        <article class="auction_slick-card">
-            <img src="img/picture1.png" alt="picture">
-            <div class="auction_slick-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="auction_slick-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Created by</span> John Doe
-                    </p>
-                </div>
-            </div>
-            <div class="auction_slick-rating">
-                <div class="auction_slick-like">
-                    <p>372</p>
-                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
-                              fill="#DC5683"/>
-                    </svg>
-                </div>
-                <div class="auction_slick-crown">
-                    <p>1/100</p>
+    <div class="container width1920">
+        <div class="auction_explore width1200">
+                <h2>Live auction</h2>
+                <a href="#">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                        <path d="M8.81807 17.3034C7.75741 20.4854 3.51477 20.4854 3.51477 20.4854C3.51477 20.4854 3.51477 16.2428 6.69675 15.1821"
                               stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <div class="auction_slick-ethereum">
-                    <p>5.0 ETH</p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="auction_slick-buy">
-                <a class="auction_slick-time">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                    12d 13h 56m
-                </a>
-                <a href="#" class="auction_slick-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                        <path d="M18.3639 9.87888L12 16.2428L7.75732 12.0002L14.1213 5.63624C16.531 3.22648 18.9408 3.24998 19.9685 3.40332C20.1267 3.4269 20.2732 3.5007 20.3863 3.61382C20.4995 3.72695 20.5733 3.87342 20.5969 4.03165C20.7502 5.05935 20.7737 7.46912 18.3639 9.87888Z"
                               stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Place Bid
-                </a>
-            </div>
-        </article>
-        <article class="auction_slick-card">
-            <img src="img/picture1.png" alt="picture">
-            <div class="auction_slick-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="auction_slick-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Created by</span> John Doe
-                    </p>
-                </div>
-            </div>
-            <div class="auction_slick-rating">
-                <div class="auction_slick-like">
-                    <p>372</p>
-                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
-                              fill="#DC5683"/>
-                    </svg>
-                </div>
-                <div class="auction_slick-crown">
-                    <p>1/100</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                        <path d="M17.3033 10.9395V16.9928C17.3033 17.0912 17.2839 17.1888 17.2462 17.2798C17.2085 17.3708 17.1533 17.4534 17.0836 17.5231L14.0516 20.5551C13.9556 20.6511 13.8354 20.7193 13.7037 20.7523C13.572 20.7853 13.4338 20.782 13.3039 20.7426C13.174 20.7033 13.0572 20.6294 12.9659 20.5289C12.8747 20.4284 12.8124 20.305 12.7858 20.1719L12 16.2428"
                               stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <div class="auction_slick-ethereum">
-                    <p>5.0 ETH</p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="auction_slick-buy">
-                <a class="auction_slick-time">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                    12d 13h 56m
-                </a>
-                <a href="#" class="auction_slick-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                        <path d="M13.0607 6.69678H7.00738C6.90889 6.69678 6.81136 6.71618 6.72037 6.75387C6.62938 6.79156 6.5467 6.8468 6.47705 6.91645L3.44501 9.94849C3.34902 10.0445 3.28088 10.1647 3.24787 10.2964C3.21485 10.4281 3.21818 10.5662 3.25752 10.6962C3.29686 10.8261 3.37072 10.9429 3.47124 11.0341C3.57175 11.1254 3.69514 11.1876 3.82826 11.2143L7.75738 12.0001"
                               stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    Place Bid
+                    Explore All
                 </a>
-            </div>
-        </article>
-        <article class="auction_slick-card">
-            <img src="img/picture1.png" alt="picture">
-            <div class="auction_slick-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="auction_slick-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Created by</span> John Doe
-                    </p>
+        </div>
+        <div class="auction_slick">
+
+            <article class="auction_slick-card">
+                <img src="img/picture1.png" alt="picture">
+                <div class="auction_slick-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="auction_slick-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Created by</span> John Doe
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="auction_slick-rating">
-                <div class="auction_slick-like">
-                    <p>372</p>
-                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
-                              fill="#DC5683"/>
-                    </svg>
+                <div class="auction_slick-rating">
+                    <div class="auction_slick-like">
+                        <p>372</p>
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
+                                  fill="#DC5683"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-crown">
+                        <p>1/100</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-ethereum">
+                        <p>5.0 ETH</p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="auction_slick-crown">
-                    <p>1/100</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="auction_slick-buy">
+                    <a class="auction_slick-time">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        12d 13h 56m
+                    </a>
+                    <a href="#" class="auction_slick-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
                 </div>
-                <div class="auction_slick-ethereum">
-                    <p>5.0 ETH</p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
+            </article>
+            <article class="auction_slick-card">
+                <img src="img/picture1.png" alt="picture">
+                <div class="auction_slick-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="auction_slick-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Created by</span> John Doe
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="auction_slick-buy">
-                <a class="auction_slick-time">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                    12d 13h 56m
-                </a>
-                <a href="#" class="auction_slick-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Place Bid
-                </a>
-            </div>
-        </article>
-        <article class="auction_slick-card">
-            <img src="img/picture1.png" alt="picture">
-            <div class="auction_slick-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="auction_slick-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Created by</span> John Doe
-                    </p>
+                <div class="auction_slick-rating">
+                    <div class="auction_slick-like">
+                        <p>372</p>
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
+                                  fill="#DC5683"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-crown">
+                        <p>1/100</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-ethereum">
+                        <p>5.0 ETH</p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="auction_slick-rating">
-                <div class="auction_slick-like">
-                    <p>372</p>
-                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
-                              fill="#DC5683"/>
-                    </svg>
+                <div class="auction_slick-buy">
+                    <a class="auction_slick-time">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        12d 13h 56m
+                    </a>
+                    <a href="#" class="auction_slick-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
                 </div>
-                <div class="auction_slick-crown">
-                    <p>1/100</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+            </article>
+            <article class="auction_slick-card">
+                <img src="img/picture1.png" alt="picture">
+                <div class="auction_slick-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="auction_slick-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Created by</span> John Doe
+                        </p>
+                    </div>
                 </div>
-                <div class="auction_slick-ethereum">
-                    <p>5.0 ETH</p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
+                <div class="auction_slick-rating">
+                    <div class="auction_slick-like">
+                        <p>372</p>
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
+                                  fill="#DC5683"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-crown">
+                        <p>1/100</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-ethereum">
+                        <p>5.0 ETH</p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="auction_slick-buy">
-                <a class="auction_slick-time">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                    12d 13h 56m
-                </a>
-                <a href="#" class="auction_slick-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Place Bid
-                </a>
-            </div>
-        </article>
+                <div class="auction_slick-buy">
+                    <a class="auction_slick-time">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        12d 13h 56m
+                    </a>
+                    <a href="#" class="auction_slick-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
+                </div>
+            </article>
+            <article class="auction_slick-card">
+                <img src="img/picture1.png" alt="picture">
+                <div class="auction_slick-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="auction_slick-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Created by</span> John Doe
+                        </p>
+                    </div>
+                </div>
+                <div class="auction_slick-rating">
+                    <div class="auction_slick-like">
+                        <p>372</p>
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
+                                  fill="#DC5683"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-crown">
+                        <p>1/100</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-ethereum">
+                        <p>5.0 ETH</p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="auction_slick-buy">
+                    <a class="auction_slick-time">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        12d 13h 56m
+                    </a>
+                    <a href="#" class="auction_slick-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
+                </div>
+            </article>
+            <article class="auction_slick-card">
+                <img src="img/picture1.png" alt="picture">
+                <div class="auction_slick-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="auction_slick-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Created by</span> John Doe
+                        </p>
+                    </div>
+                </div>
+                <div class="auction_slick-rating">
+                    <div class="auction_slick-like">
+                        <p>372</p>
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
+                                  fill="#DC5683"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-crown">
+                        <p>1/100</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-ethereum">
+                        <p>5.0 ETH</p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="auction_slick-buy">
+                    <a class="auction_slick-time">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        12d 13h 56m
+                    </a>
+                    <a href="#" class="auction_slick-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
+                </div>
+            </article>
+            <article class="auction_slick-card">
+                <img src="img/picture1.png" alt="picture">
+                <div class="auction_slick-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="auction_slick-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Created by</span> John Doe
+                        </p>
+                    </div>
+                </div>
+                <div class="auction_slick-rating">
+                    <div class="auction_slick-like">
+                        <p>372</p>
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3334 17.25C10.3334 17.25 0.958374 12 0.958374 5.62501C0.958565 4.49826 1.34899 3.40635 2.06326 2.53493C2.77753 1.66351 3.77157 1.06636 4.87636 0.845015C5.98116 0.623669 7.12851 0.791788 8.12336 1.32079C9.11821 1.84979 9.89914 2.70702 10.3334 3.74673L10.3334 3.74673C10.7676 2.70702 11.5485 1.84979 12.5434 1.32079C13.5382 0.79179 14.6856 0.62367 15.7904 0.845015C16.8952 1.06636 17.8892 1.66351 18.6035 2.53493C19.3178 3.40635 19.7082 4.49826 19.7084 5.62501C19.7084 12 10.3334 17.25 10.3334 17.25Z"
+                                  fill="#DC5683"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-crown">
+                        <p>1/100</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="auction_slick-ethereum">
+                        <p>5.0 ETH</p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="auction_slick-buy">
+                    <a class="auction_slick-time">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C16.5563 20.25 20.25 16.5563 20.25 12C20.25 7.44365 16.5563 3.75 12 3.75C7.44365 3.75 3.75 7.44365 3.75 12C3.75 16.5563 7.44365 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M12 11.9999L15.7123 8.2876" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M9.75 0.75H14.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        12d 13h 56m
+                    </a>
+                    <a href="#" class="auction_slick-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
+                </div>
+            </article>
+
+        </div>
     </div>
 </section>
 <section class="collection">
+    <div class="container">
     <div class="collection_explore">
         <h2>Popular Collections</h2>
         <a href="#">
@@ -495,443 +659,455 @@
             </div>
         </article>
     </div>
+    </div>
 </section>
 <section class="sellers">
-    <h2>Top Sellers</h2>
-    <div class="sellers_content">
-        <div class="sellers_content-user">
-            <img src="img/avajohn.png" alt="john">
-            <div class="sellers_content-userinfo">
-                <p class="sellers_content-username">John Doe</p>
-                <p class="sellers_content-eth">ETH 242.21</p>
+    <div class="container">
+        <h2>Top Sellers</h2>
+        <div class="sellers_content">
+            <div class="sellers_content-user">
+                <img src="img/avajohn.png" alt="john">
+                <div class="sellers_content-userinfo">
+                    <p class="sellers_content-username">John Doe</p>
+                    <p class="sellers_content-eth">ETH 242.21</p>
+                </div>
             </div>
-        </div>
-        <div class="sellers_content-user">
-            <img src="img/avajohn.png" alt="john">
-            <div class="sellers_content-userinfo">
-                <p class="sellers_content-username">John Doe</p>
-                <p class="sellers_content-eth">ETH 242.21</p>
+            <div class="sellers_content-user">
+                <img src="img/avajohn.png" alt="john">
+                <div class="sellers_content-userinfo">
+                    <p class="sellers_content-username">John Doe</p>
+                    <p class="sellers_content-eth">ETH 242.21</p>
+                </div>
             </div>
-        </div>
-        <div class="sellers_content-user">
-            <img src="img/avajohn.png" alt="john">
-            <div class="sellers_content-userinfo">
-                <p class="sellers_content-username">John Doe</p>
-                <p class="sellers_content-eth">ETH 242.21</p>
+            <div class="sellers_content-user">
+                <img src="img/avajohn.png" alt="john">
+                <div class="sellers_content-userinfo">
+                    <p class="sellers_content-username">John Doe</p>
+                    <p class="sellers_content-eth">ETH 242.21</p>
+                </div>
             </div>
-        </div>
-        <div class="sellers_content-user">
-            <img src="img/avajohn.png" alt="john">
-            <div class="sellers_content-userinfo">
-                <p class="sellers_content-username">John Doe</p>
-                <p class="sellers_content-eth">ETH 242.21</p>
+            <div class="sellers_content-user">
+                <img src="img/avajohn.png" alt="john">
+                <div class="sellers_content-userinfo">
+                    <p class="sellers_content-username">John Doe</p>
+                    <p class="sellers_content-eth">ETH 242.21</p>
+                </div>
             </div>
-        </div>
-        <div class="sellers_content-user">
-            <img src="img/avajohn.png" alt="john">
-            <div class="sellers_content-userinfo">
-                <p class="sellers_content-username">John Doe</p>
-                <p class="sellers_content-eth">ETH 242.21</p>
+            <div class="sellers_content-user">
+                <img src="img/avajohn.png" alt="john">
+                <div class="sellers_content-userinfo">
+                    <p class="sellers_content-username">John Doe</p>
+                    <p class="sellers_content-eth">ETH 242.21</p>
+                </div>
             </div>
-        </div>
-        <div class="sellers_content-user">
-            <img src="img/avajohn.png" alt="john">
-            <div class="sellers_content-userinfo">
-                <p class="sellers_content-username">John Doe</p>
-                <p class="sellers_content-eth">ETH 242.21</p>
+            <div class="sellers_content-user">
+                <img src="img/avajohn.png" alt="john">
+                <div class="sellers_content-userinfo">
+                    <p class="sellers_content-username">John Doe</p>
+                    <p class="sellers_content-eth">ETH 242.21</p>
+                </div>
             </div>
-        </div>
-        <div class="sellers_content-user">
-            <img src="img/avajohn.png" alt="john">
-            <div class="sellers_content-userinfo">
-                <p class="sellers_content-username">John Doe</p>
-                <p class="sellers_content-eth">ETH 242.21</p>
+            <div class="sellers_content-user">
+                <img src="img/avajohn.png" alt="john">
+                <div class="sellers_content-userinfo">
+                    <p class="sellers_content-username">John Doe</p>
+                    <p class="sellers_content-eth">ETH 242.21</p>
+                </div>
             </div>
-        </div>
-        <div class="sellers_content-user">
-            <img src="img/avajohn.png" alt="john">
-            <div class="sellers_content-userinfo">
-                <p class="sellers_content-username">John Doe</p>
-                <p class="sellers_content-eth">ETH 242.21</p>
+            <div class="sellers_content-user">
+                <img src="img/avajohn.png" alt="john">
+                <div class="sellers_content-userinfo">
+                    <p class="sellers_content-username">John Doe</p>
+                    <p class="sellers_content-eth">ETH 242.21</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section class="today">
-    <h2>Today’s Picks</h2>
-    <div class="today_slider">
-        <article class="today_slider-card">
-            <img src="img/avatarcard.png" alt="avatar">
-            <div class="today_slider-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="today_slider-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Owned by</span> John Doe
-                    </p>
+    <div class="container">
+        <h2 class="today_title">Today’s Picks</h2>
+        <div class="today_slider">
+            <article class="today_slider-card">
+                <img src="img/avatarcard.png" alt="avatar">
+                <div class="today_slider-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="today_slider-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Owned by</span> John Doe
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="today_slider-info">
-                <div class="today_slider-like">
-                    <p>372</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="today_slider-info">
+                    <div class="today_slider-like">
+                        <p>372</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="today_slider-eth">
+                        <p>5.00<span>ETH</span></p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="today_slider-eth">
-                    <p>5.00<span>ETH</span></p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
+                <div class="today_slider-buy">
+                    <a href="#" class="today_slider-time">
+                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        View History
+                    </a>
+                    <a href="#" class="today_slider-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
                 </div>
-            </div>
-            <div class="today_slider-buy">
-                <a href="#" class="today_slider-time">
-                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    View History
-                </a>
-                <a href="#" class="today_slider-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Place Bid
-                </a>
-            </div>
-        </article>
-        <article class="today_slider-card">
-            <img src="img/avatarcard.png" alt="avatar">
-            <div class="today_slider-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="today_slider-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Owned by</span> John Doe
-                    </p>
+            </article>
+            <article class="today_slider-card">
+                <img src="img/avatarcard.png" alt="avatar">
+                <div class="today_slider-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="today_slider-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Owned by</span> John Doe
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="today_slider-info">
-                <div class="today_slider-like">
-                    <p>372</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="today_slider-info">
+                    <div class="today_slider-like">
+                        <p>372</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="today_slider-eth">
+                        <p>5.00<span>ETH</span></p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="today_slider-eth">
-                    <p>5.00<span>ETH</span></p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
+                <div class="today_slider-buy">
+                    <a href="#" class="today_slider-time">
+                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        View History
+                    </a>
+                    <a href="#" class="today_slider-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
                 </div>
-            </div>
-            <div class="today_slider-buy">
-                <a href="#" class="today_slider-time">
-                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    View History
-                </a>
-                <a href="#" class="today_slider-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Place Bid
-                </a>
-            </div>
-        </article>
-        <article class="today_slider-card">
-            <img src="img/avatarcard.png" alt="avatar">
-            <div class="today_slider-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="today_slider-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Owned by</span> John Doe
-                    </p>
+            </article>
+            <article class="today_slider-card">
+                <img src="img/avatarcard.png" alt="avatar">
+                <div class="today_slider-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="today_slider-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Owned by</span> John Doe
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="today_slider-info">
-                <div class="today_slider-like">
-                    <p>372</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="today_slider-info">
+                    <div class="today_slider-like">
+                        <p>372</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="today_slider-eth">
+                        <p>5.00<span>ETH</span></p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="today_slider-eth">
-                    <p>5.00<span>ETH</span></p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
+                <div class="today_slider-buy">
+                    <a href="#" class="today_slider-time">
+                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        View History
+                    </a>
+                    <a href="#" class="today_slider-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
                 </div>
-            </div>
-            <div class="today_slider-buy">
-                <a href="#" class="today_slider-time">
-                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    View History
-                </a>
-                <a href="#" class="today_slider-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Place Bid
-                </a>
-            </div>
-        </article>
-        <article class="today_slider-card">
-            <img src="img/avatarcard.png" alt="avatar">
-            <div class="today_slider-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="today_slider-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Owned by</span> John Doe
-                    </p>
+            </article>
+            <article class="today_slider-card">
+                <img src="img/avatarcard.png" alt="avatar">
+                <div class="today_slider-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="today_slider-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Owned by</span> John Doe
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="today_slider-info">
-                <div class="today_slider-like">
-                    <p>372</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="today_slider-info">
+                    <div class="today_slider-like">
+                        <p>372</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="today_slider-eth">
+                        <p>5.00<span>ETH</span></p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="today_slider-eth">
-                    <p>5.00<span>ETH</span></p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
+                <div class="today_slider-buy">
+                    <a href="#" class="today_slider-time">
+                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        View History
+                    </a>
+                    <a href="#" class="today_slider-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
                 </div>
-            </div>
-            <div class="today_slider-buy">
-                <a href="#" class="today_slider-time">
-                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    View History
-                </a>
-                <a href="#" class="today_slider-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Place Bid
-                </a>
-            </div>
-        </article>
-        <article class="today_slider-card">
-            <img src="img/avatarcard.png" alt="avatar">
-            <div class="today_slider-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="today_slider-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Owned by</span> John Doe
-                    </p>
+            </article>
+            <article class="today_slider-card">
+                <img src="img/avatarcard.png" alt="avatar">
+                <div class="today_slider-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="today_slider-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Owned by</span> John Doe
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="today_slider-info">
-                <div class="today_slider-like">
-                    <p>372</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="today_slider-info">
+                    <div class="today_slider-like">
+                        <p>372</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="today_slider-eth">
+                        <p>5.00<span>ETH</span></p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="today_slider-eth">
-                    <p>5.00<span>ETH</span></p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
+                <div class="today_slider-buy">
+                    <a href="#" class="today_slider-time">
+                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        View History
+                    </a>
+                    <a href="#" class="today_slider-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
                 </div>
-            </div>
-            <div class="today_slider-buy">
-                <a href="#" class="today_slider-time">
-                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    View History
-                </a>
-                <a href="#" class="today_slider-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Place Bid
-                </a>
-            </div>
-        </article>
-        <article class="today_slider-card">
-            <img src="img/avatarcard.png" alt="avatar">
-            <div class="today_slider-user">
-                <img src="img/avatar.png" alt="user">
-                <div class="today_slider-username">
-                    <h2>Metaverse</h2>
-                    <p>
-                        <span>Owned by</span> John Doe
-                    </p>
+            </article>
+            <article class="today_slider-card">
+                <img src="img/avatarcard.png" alt="avatar">
+                <div class="today_slider-user">
+                    <img src="img/avatar.png" alt="user">
+                    <div class="today_slider-username">
+                        <h2>Metaverse</h2>
+                        <p>
+                            <span>Owned by</span> John Doe
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="today_slider-info">
-                <div class="today_slider-like">
-                    <p>372</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="today_slider-info">
+                    <div class="today_slider-like">
+                        <p>372</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="today_slider-eth">
+                        <p>5.00<span>ETH</span></p>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.6667" cy="13" r="12" stroke="white"/>
+                            <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
+                                  fill="white"/>
+                            <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
+                            <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
+                                  fill="white"/>
+                            <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
+                            <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
+                            <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="today_slider-eth">
-                    <p>5.00<span>ETH</span></p>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.6667" cy="13" r="12" stroke="white"/>
-                        <path d="M12.634 5.7998L12.5386 6.12406V15.5324L12.634 15.6276L17.0012 13.0462L12.634 5.7998Z"
-                              fill="white"/>
-                        <path d="M12.634 5.7998L8.26672 13.0462L12.634 15.6276V11.0611V5.7998Z" fill="white"/>
-                        <path d="M12.634 16.4546L12.5802 16.5202V19.8716L12.634 20.0287L17.0038 13.8745L12.634 16.4546Z"
-                              fill="white"/>
-                        <path d="M12.634 20.0287V16.4546L8.26672 13.8745L12.634 20.0287Z" fill="white"/>
-                        <path d="M12.634 15.6276L17.0012 13.0461L12.634 11.061V15.6276Z" fill="white"/>
-                        <path d="M8.26672 13.0461L12.634 15.6276V11.061L8.26672 13.0461Z" fill="white"/>
-                    </svg>
+                <div class="today_slider-buy">
+                    <a href="#" class="today_slider-time">
+                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        View History
+                    </a>
+                    <a href="#" class="today_slider-up">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white"
+                                  stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Place Bid
+                    </a>
                 </div>
-            </div>
-            <div class="today_slider-buy">
-                <a href="#" class="today_slider-time">
-                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 6.25V10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M13.2476 11.875L10 10" stroke="white" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M5.61194 7.79004H2.48694V4.66504" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.13859 14.8614C6.10007 15.8229 7.32508 16.4776 8.6587 16.7429C9.99232 17.0082 11.3747 16.872 12.6309 16.3517C13.8871 15.8313 14.9609 14.9501 15.7163 13.8196C16.4717 12.689 16.8749 11.3598 16.8749 10C16.8749 8.64026 16.4717 7.31105 15.7163 6.18046C14.9609 5.04987 13.8871 4.16868 12.6309 3.64833C11.3747 3.12798 9.99232 2.99183 8.6587 3.2571C7.32508 3.52238 6.10007 4.17716 5.13859 5.13864L2.48694 7.79029"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    View History
-                </a>
-                <a href="#" class="today_slider-up">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.2308 18.3767C4.25418 18.4752 4.29726 18.5681 4.35746 18.6496C4.41765 18.7311 4.49371 18.7996 4.58107 18.8509C4.66842 18.9023 4.76525 18.9354 4.86574 18.9483C4.96624 18.9613 5.06831 18.9538 5.16582 18.9262C9.63668 17.6918 14.3584 17.6914 18.8295 18.925C18.927 18.9525 19.029 18.96 19.1295 18.947C19.2299 18.9341 19.3267 18.9009 19.4141 18.8496C19.5014 18.7983 19.5774 18.7299 19.6376 18.6484C19.6978 18.567 19.7409 18.4742 19.7643 18.3756L22.1539 8.22092C22.1859 8.08498 22.1793 7.9428 22.1348 7.81041C22.0904 7.67802 22.0098 7.56066 21.9023 7.47157C21.7948 7.38247 21.6645 7.32518 21.5261 7.30613C21.3878 7.28708 21.2468 7.30704 21.1192 7.36376L16.377 9.47142C16.2058 9.54753 16.0122 9.55677 15.8345 9.49734C15.6568 9.43791 15.5078 9.3141 15.4168 9.1503L12.6556 4.1802C12.5907 4.06328 12.4956 3.96586 12.3803 3.89803C12.2651 3.8302 12.1337 3.79443 12 3.79443C11.8662 3.79443 11.7349 3.8302 11.6196 3.89803C11.5044 3.96586 11.4093 4.06328 11.3444 4.1802L8.58321 9.1503C8.49221 9.3141 8.34318 9.43791 8.16547 9.49734C7.98775 9.55677 7.79423 9.54753 7.62299 9.47142L2.88004 7.36345C2.75245 7.30674 2.61156 7.28677 2.47323 7.3058C2.3349 7.32483 2.20464 7.3821 2.09709 7.47115C1.98955 7.56021 1.909 7.67751 1.86452 7.80987C1.82003 7.94222 1.81338 8.08437 1.84531 8.2203L4.2308 18.3767Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9 15.1574C10.9945 14.9475 13.0055 14.9475 15 15.1574" stroke="white" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Place Bid
-                </a>
-            </div>
-        </article>
-    </div>
-    <div class="today_btn">
-        <a href="#" class="today_btn-loading">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.48438 9.34863H2.98438V4.84863" stroke="white" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M17.8336 6.16637C17.0675 5.40029 16.1581 4.7926 15.1571 4.37799C14.1562 3.96339 13.0834 3.75 12 3.75C10.9166 3.75 9.84378 3.96339 8.84285 4.37799C7.84191 4.7926 6.93244 5.40029 6.16635 6.16637L2.98438 9.34835"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16.5156 14.6514H21.0156V19.1514" stroke="white" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M6.16638 17.8333C6.93247 18.5994 7.84194 19.2071 8.84287 19.6217C9.84381 20.0363 10.9166 20.2497 12 20.2497C13.0834 20.2497 14.1562 20.0363 15.1572 19.6217C16.1581 19.2071 17.0676 18.5994 17.8336 17.8333L21.0156 14.6514"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Load More
-        </a>
+            </article>
+        </div>
+        <div class="today_btn">
+            <a href="#" class="today_btn-loading">
+                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.48438 9.34863H2.98438V4.84863" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M17.8336 6.16637C17.0675 5.40029 16.1581 4.7926 15.1571 4.37799C14.1562 3.96339 13.0834 3.75 12 3.75C10.9166 3.75 9.84378 3.96339 8.84285 4.37799C7.84191 4.7926 6.93244 5.40029 6.16635 6.16637L2.98438 9.34835"
+                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.5156 14.6514H21.0156V19.1514" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M6.16638 17.8333C6.93247 18.5994 7.84194 19.2071 8.84287 19.6217C9.84381 20.0363 10.9166 20.2497 12 20.2497C13.0834 20.2497 14.1562 20.0363 15.1572 19.6217C16.1581 19.2071 17.0676 18.5994 17.8336 17.8333L21.0156 14.6514"
+                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Load More
+            </a>
+        </div>
     </div>
 </section>
-<footer class="footer">
+<footer>
+    <div class="container footer">
     <div class="footer_contacts">
         <a href="#" class="footer_contacts-logo">
             <img src="./img/logo.svg" alt="logo">
@@ -1021,33 +1197,58 @@
             </div>
             <div class="footer_menu-copyright">
                 <div class="footer_menu-social">
-                    <a href="#"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 24C0 10.7452 10.7452 0 24 0V0C37.2548 0 48 10.7452 48 24V24C48 37.2548 37.2548 48 24 48V48C10.7452 48 0 37.2548 0 24V24Z" fill="white" fill-opacity="0.2"/>
-                        <path d="M24 33C28.9706 33 33 28.9706 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M27.75 20.25H26.25C25.6533 20.25 25.081 20.4871 24.659 20.909C24.2371 21.331 24 21.9033 24 22.5V33" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M21 25.5H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg></a>
-                    <a href="#"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 24C0 10.7452 10.7452 0 24 0V0C37.2548 0 48 10.7452 48 24V24C48 37.2548 37.2548 48 24 48V48C10.7452 48 0 37.2548 0 24V24Z" fill="white" fill-opacity="0.2"/>
-                        <path d="M31.5 15.75H16.5C16.0858 15.75 15.75 16.0858 15.75 16.5V31.5C15.75 31.9142 16.0858 32.25 16.5 32.25H31.5C31.9142 32.25 32.25 31.9142 32.25 31.5V16.5C32.25 16.0858 31.9142 15.75 31.5 15.75Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M23.25 22.5V28.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M20.25 22.5V28.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M23.25 25.125C23.25 24.4288 23.5266 23.7611 24.0188 23.2688C24.5111 22.7766 25.1788 22.5 25.875 22.5C26.5712 22.5 27.2389 22.7766 27.7312 23.2688C28.2234 23.7611 28.5 24.4288 28.5 25.125V28.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M20.25 20.625C20.8713 20.625 21.375 20.1213 21.375 19.5C21.375 18.8787 20.8713 18.375 20.25 18.375C19.6287 18.375 19.125 18.8787 19.125 19.5C19.125 20.1213 19.6287 20.625 20.25 20.625Z" fill="white"/>
-                    </svg></a>
-                    <a href="#"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 24C0 10.7452 10.7452 0 24 0V0C37.2548 0 48 10.7452 48 24V24C48 37.2548 37.2548 48 24 48V48C10.7452 48 0 37.2548 0 24V24Z" fill="white" fill-opacity="0.2"/>
-                        <path d="M24 33C28.9706 33 33 28.9706 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M18.6586 31.2444C19.9936 29.0327 21.8774 27.2036 24.1274 25.9343C26.3774 24.6651 28.9172 23.9987 31.5006 24C32.0065 24 32.5062 24.0247 32.9997 24.074" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M29.6277 16.9775C28.2224 18.7049 26.4494 20.0969 24.438 21.0523C22.4265 22.0076 20.2273 22.5023 18.0005 22.5001C17.052 22.5005 16.1056 22.4115 15.1738 22.2341" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M20.056 15.9082C22.3115 17.2316 24.1816 19.122 25.4807 21.3917C26.7798 23.6613 27.4627 26.2313 27.4615 28.8464C27.4624 30.0717 27.3134 31.2925 27.018 32.4817" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg></a>
+                    <a href="#">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 24C0 10.7452 10.7452 0 24 0V0C37.2548 0 48 10.7452 48 24V24C48 37.2548 37.2548 48 24 48V48C10.7452 48 0 37.2548 0 24V24Z"
+                                  fill="white" fill-opacity="0.2"/>
+                            <path d="M24 33C28.9706 33 33 28.9706 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M27.75 20.25H26.25C25.6533 20.25 25.081 20.4871 24.659 20.909C24.2371 21.331 24 21.9033 24 22.5V33"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 25.5H27" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 24C0 10.7452 10.7452 0 24 0V0C37.2548 0 48 10.7452 48 24V24C48 37.2548 37.2548 48 24 48V48C10.7452 48 0 37.2548 0 24V24Z"
+                                  fill="white" fill-opacity="0.2"/>
+                            <path d="M31.5 15.75H16.5C16.0858 15.75 15.75 16.0858 15.75 16.5V31.5C15.75 31.9142 16.0858 32.25 16.5 32.25H31.5C31.9142 32.25 32.25 31.9142 32.25 31.5V16.5C32.25 16.0858 31.9142 15.75 31.5 15.75Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.25 22.5V28.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M20.25 22.5V28.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M23.25 25.125C23.25 24.4288 23.5266 23.7611 24.0188 23.2688C24.5111 22.7766 25.1788 22.5 25.875 22.5C26.5712 22.5 27.2389 22.7766 27.7312 23.2688C28.2234 23.7611 28.5 24.4288 28.5 25.125V28.5"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.25 20.625C20.8713 20.625 21.375 20.1213 21.375 19.5C21.375 18.8787 20.8713 18.375 20.25 18.375C19.6287 18.375 19.125 18.8787 19.125 19.5C19.125 20.1213 19.6287 20.625 20.25 20.625Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 24C0 10.7452 10.7452 0 24 0V0C37.2548 0 48 10.7452 48 24V24C48 37.2548 37.2548 48 24 48V48C10.7452 48 0 37.2548 0 24V24Z"
+                                  fill="white" fill-opacity="0.2"/>
+                            <path d="M24 33C28.9706 33 33 28.9706 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.6586 31.2444C19.9936 29.0327 21.8774 27.2036 24.1274 25.9343C26.3774 24.6651 28.9172 23.9987 31.5006 24C32.0065 24 32.5062 24.0247 32.9997 24.074"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M29.6277 16.9775C28.2224 18.7049 26.4494 20.0969 24.438 21.0523C22.4265 22.0076 20.2273 22.5023 18.0005 22.5001C17.052 22.5005 16.1056 22.4115 15.1738 22.2341"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.056 15.9082C22.3115 17.2316 24.1816 19.122 25.4807 21.3917C26.7798 23.6613 27.4627 26.2313 27.4615 28.8464C27.4624 30.0717 27.3134 31.2925 27.018 32.4817"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
                 <p>&copy; 2012-2022, All Rights Reserved</p>
             </div>
         </div>
     </div>
-
+    </div>
 </footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
