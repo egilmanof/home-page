@@ -1193,5 +1193,9 @@ body {
         flex-direction: column;
     }
 
+    .footer_menu-copyright p {
+        margin-top: 20px;
+    }
+
 }
 
