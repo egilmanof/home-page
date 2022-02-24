@@ -12,7 +12,7 @@
 body {
     background-color: #030812;
     font-family: Urbanist, sans-serif;
-    background-image: url(/img/bgbody.png);
+    background-image: url('../img/bgrocet.svg');
     background-repeat: no-repeat;
     background-position: -353px -326px
 }
