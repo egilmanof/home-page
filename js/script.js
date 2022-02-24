@@ -1,22 +1,4 @@
 
-const addSlider = document.querySelector('.today_slider');
-document.querySelector('.today_btn-loading').addEventListener('click', function () {
-
-    const html = document.querySelector('.today_slider-card').outerHTML;
-    for (let i = 0; i < 3; i++) {
-        addSlider.insertAdjacentHTML('beforeend', html)
-    }
-});
-
-
-
-
-
-
-
-
-
-// SLICK
 $(document).ready(function(){
     $('.auction_slick').slick({
         dots: true,
@@ -56,6 +38,19 @@ $(document).ready(function(){
     })
 });
 
+
+
+// LOADER
+
+
+const addSlider = document.querySelector('.today_slider');
+document.querySelector('.today_btn-loading').addEventListener('click', function () {
+
+    const html = document.querySelector('.today_slider-card').outerHTML;
+    for (let i = 0; i < 3; i++) {
+        addSlider.insertAdjacentHTML('beforeend', html)
+    }
+});
 
 
 
